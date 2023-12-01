@@ -1,0 +1,1 @@
+Basic editor for Hypixel crosshairs. Dunno how to use them cuz this ain't for me.

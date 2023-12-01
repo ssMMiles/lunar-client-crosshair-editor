@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Pixel Editor</title>
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
+
+        #canvas {
+            border: 1px solid black;
+            cursor: crosshair;
+            margin-top: 20px;
+        }
+
+        #exportButton {
+            margin-top: 20px;
+        }
+
+        .slider-container {
+            margin: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Hypixel Crosshair Editor</h1>
+    <div class="slider-container">
+        <label for="gridSizeSlider">Grid Size: <span id="gridSizeDisplay">37</span></label>
+        <input type="range" id="gridSizeSlider" min="1" max="37" step="2" value="37">
+    </div>
+    <canvas id="canvas" width="370" height="370"></canvas>
+    </br>
+    <button id="exportButton">Export as Bitmap String</button>
+    <textarea id="outputBox" rows="4" style="min-width: 30%; display: none; margin: 20px auto;" readonly></textarea>
+    <script src="script.js"></script>
+</body>
+
+</html>
